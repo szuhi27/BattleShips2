@@ -4,8 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BattleShips.Customs;
 
-namespace BattleShips.Customs
+namespace BattleShips.Logic
 {
     
     internal class AiBehav

@@ -17,6 +17,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using BattleShips.Customs;
+using BattleShips.Logic;
 
 namespace BattleShips.UI
 {

@@ -1,6 +1,7 @@
 ﻿using System;
+using BattleShips.Customs;
 
-namespace BattleShips.Customs
+namespace BattleShips.Logic
 {
     internal class ShipPlacer
     {

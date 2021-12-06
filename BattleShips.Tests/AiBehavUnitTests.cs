@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using BattleShips.Customs;
+using BattleShips.Logic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BattleShips.Tests
