@@ -1,0 +1,239 @@
+﻿<Window x:Name="PlayW" x:Class="BattleShips.UI.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BattleShips.UI"
+        mc:Ignorable="d"
+        Title="BattleShips" Height="1000" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Cursor="Hand" WindowStyle="SingleBorderWindow" Icon="/Images/Logo.ico" Closed="PlayW_Closed" KeyDown="HIdeAiFog" KeyUp="ShowAiFog">
+
+    <Grid>
+        <Image Height="1000" Width="800" Source="/Images/PlayBcg.jpg" Stretch="Fill"/>
+        <GroupBox x:Name="P1Own" Header="You" Margin="72,200,400,444" Cursor="Cross" FontSize="16">
+            <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P1Field_1_1" Content="1_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_2_1" Content="2_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_3_1" Content="3_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_4_1" Content="4_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_5_1" Content="5_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_6_1" Content="6_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P1Field_1_2" Content="1_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_2_2" Content="2_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_3_2" Content="3_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_4_2" Content="4_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_5_2" Content="5_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_6_2" Content="6_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P1Field_1_3" Content="1_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_2_3" Content="2_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_3_3" Content="3_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_4_3" Content="4_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_5_3" Content="5_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_6_3" Content="6_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P1Field_1_4" Content="1_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_2_4" Content="2_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_3_4" Content="3_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_4_4" Content="4_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_5_4" Content="5_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_6_4" Content="6_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P1Field_1_5" Content="1_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_2_5" Content="2_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_3_5" Content="3_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_4_5" Content="4_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_5_5" Content="5_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_6_5" Content="6_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P1Field_1_6" Content="1_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_2_6" Content="2_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_3_6" Content="3_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_4_6" Content="4_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_5_6" Content="5_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                    <Button x:Name="P1Field_6_6" Content="6_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1SetupClick" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="P1Enemy" Header="Enemy" Margin="405,200,67,444" Cursor="Cross" FontSize="16">
+            <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="2_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="3_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="4_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="5_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="6_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="2_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="3_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="4_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="5_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="6_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="2_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="3_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="4_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="5_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="6_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="2_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="3_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="4_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="5_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="6_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="2_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="3_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="4_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="5_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="6_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="2_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="3_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="4_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="5_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                    <Button Content="6_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P1AttackClick" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="P2Own" Header="You" Margin="72,590,400,54" Cursor="Cross" FontSize="16">
+            <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P2Field_1_1" Content="1_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_2_1" Content="2_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_3_1" Content="3_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_4_1" Content="4_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_5_1" Content="5_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_6_1" Content="6_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P2Field_1_2" Content="1_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_2_2" Content="2_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_3_2" Content="3_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_4_2" Content="4_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_5_2" Content="5_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_6_2" Content="6_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P2Field_1_3" Content="1_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_2_3" Content="2_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_3_3" Content="3_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_4_3" Content="4_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_5_3" Content="5_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_6_3" Content="6_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P2Field_1_4" Content="1_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_2_4" Content="2_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_3_4" Content="3_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_4_4" Content="4_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_5_4" Content="5_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_6_4" Content="6_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P2Field_1_5" Content="1_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_2_5" Content="2_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_3_5" Content="3_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_4_5" Content="4_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_5_5" Content="5_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_6_5" Content="6_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="P2Field_1_6" Content="1_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_2_6" Content="2_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_3_6" Content="3_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_4_6" Content="4_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_5_6" Content="5_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                    <Button x:Name="P2Field_6_6" Content="6_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2SetupClick" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="P2Enemy" Header="Enemy" Margin="405,590,67,54" Cursor="Cross" FontSize="16">
+            <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="2_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="3_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="4_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="5_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="6_1" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="2_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="3_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="4_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="5_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="6_2" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="2_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="3_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="4_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="5_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="6_3" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="2_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="3_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="4_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="5_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="6_4" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="2_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="3_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="4_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="5_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="6_5" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                </StackPanel>
+                <StackPanel SnapsToDevicePixels="True" Margin="0,0,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="1_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="2_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="3_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="4_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="5_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                    <Button Content="6_6" Width="50" Height="50" Background="#FF6498FF" FontSize="0.01" Click="P2AttackClick" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <Label x:Name="TopLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Round 0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="168" Width="780" FontFamily="Stencil" FontSize="65"/>
+        <Image x:Name="P1Fog" Margin="-43,149,-57,366" Source="/Images/Fog.png" Stretch="Fill"/>
+        <Image x:Name="P2Fog" Margin="-43,536,-44,-40" Source="/Images/Fog.png" Stretch="Fill"/>
+
+        <Button x:Name="PvAIB" Content="P vs Ai" HorizontalAlignment="Left" Margin="247,305,0,0" VerticalAlignment="Top" Height="130" Width="322" FontFamily="Stencil" FontSize="48" Click="PvAIB_Click" Background="#FF6498FF" Visibility="Hidden"/>
+        <Button x:Name="PvPB" Content="P vs P" HorizontalAlignment="Left" Margin="247,695,0,0" VerticalAlignment="Top" Height="130" Width="322" Background="#FF6498FF" FontFamily="Stencil" FontSize="48" Click="PvPB_Click" Visibility="Hidden"/>
+        <TextBox x:Name="P1NameTB" HorizontalAlignment="Left" Margin="168,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="68" FontSize="36" Text="Name" TextDecorations="{x:Null}" MaxLength="10" VerticalContentAlignment="Center" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" CharacterCasing="Normal" Visibility="Hidden"/>
+        <Button x:Name="P1SaveB" Content="Save" HorizontalAlignment="Left" Margin="465,336,0,0" VerticalAlignment="Top" Height="68" Width="130" FontSize="36" FontFamily="Stencil" Background="#FF5990FF" Click="SaveP1_Click" Visibility="Hidden"/>
+        <TextBox x:Name="P2NameTB" HorizontalAlignment="Left" Margin="168,726,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="68" FontSize="36" Text="Name2" TextDecorations="{x:Null}" MaxLength="10" VerticalContentAlignment="Center" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" CharacterCasing="Lower" Visibility="Hidden"></TextBox>
+        <Button x:Name="P2SaveB" Content="Save" HorizontalAlignment="Left" Margin="465,726,0,0" VerticalAlignment="Top" Height="68" Width="130" FontSize="36" FontFamily="Stencil" Background="#FF5990FF" Click="SaveP2_Click" Visibility="Hidden"/>
+        <Button x:Name="AutoSetupB" Content="auto" HorizontalAlignment="Left" Margin="122,481,0,0" VerticalAlignment="Top" Height="109" Width="228" Click="AutoSetup_Click" Background="#FF6498FF" FontFamily="Stencil" FontSize="48" Visibility="Hidden"/>
+        <Button x:Name="ManualSetupB" Content="manual" HorizontalAlignment="Left" Margin="416,481,0,0" VerticalAlignment="Top" Height="109" Width="228" Click="ManualSetup_Click" Background="#FF6498FF" FontFamily="Stencil" FontSize="48" Visibility="Hidden"/>
+        <Button x:Name="HomeB" Content="home" HorizontalAlignment="Left" Margin="302,545,0,0" VerticalAlignment="Top" Height="54" Width="212" FontFamily="Stencil" FontSize="48" Background="#FF35F1FF" Visibility="Hidden" Click="HomeB_Click"/>
+
+
+
+
+    </Grid>
+
+</Window>

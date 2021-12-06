@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Fog.png" />
+    <None Remove="Images\HSBcg.png" />
+    <None Remove="Images\Logo.ico" />
+    <None Remove="Images\MainBcg.jpg" />
+    <None Remove="Images\PlayBcg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Fog.png" />
+    <Resource Include="Images\HSBcg.png" />
+    <Resource Include="Images\Logo.ico" />
+    <Resource Include="Images\MainBcg.jpg" />
+    <Resource Include="Images\PlayBcg.jpg" />
+  </ItemGroup>
+
+</Project>
